@@ -43,7 +43,7 @@ Most dermatology AI tools:
 🏗️ System Architecture
 -----------------------
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   Frontend (React)      ↓  Node.js Backend (Express API)      ↓  ML Service (FastAPI)      ↓  [CV Model + RAG Engine]   `
+`   Frontend (React)      ↓  Node.js Backend (Express API)      ↓  ML Service (FastAPI)      ↓  [CV Model + RAG Engine]   `
 
 🛠️ Tech Stack
 --------------
@@ -97,8 +97,7 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
     
 *   Organized into:
     
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   data/    train/      acne/      melanoma/      nevus/    val/   `
+`   data/    train/      acne/      melanoma/      nevus/    val/   `
 
 ### 2\. Preprocessing
 
@@ -121,8 +120,7 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
     
 *   Modified final layer for custom classes
     
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   model = models.resnet18(pretrained=True)  model.fc = nn.Linear(model.fc.in_features, num_classes)   `
+`   model = models.resnet18(pretrained=True)  model.fc = nn.Linear(model.fc.in_features, num_classes)   `
 
 *   Loss: CrossEntropyLoss
     
@@ -203,7 +201,7 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
 
 ### 4\. Response returned:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   {    "prediction": "acne",    "confidence": 0.98,    "explanation": "...",    "enhanced_image": "...",    "heatmap": "..."  }   `
+` {    "prediction": "acne",    "confidence": 0.98,    "explanation": "...",    "enhanced_image": "...",    "heatmap": "..."  }   `
 
 ### 5\. User asks question
 
@@ -214,45 +212,40 @@ Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQL
 📦 Project Structure
 --------------------
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   derma-ai-project/  │  ├── frontend/  │   ├── components/  │   │   ├── Upload.js  │   │   └── Result.js  │  ├── backend/  │   ├── server.js  │  ├── ml-service/  │   ├── api/  │   │   └── main.py  │   ├── preprocessing/  │   ├── inference/  │   ├── training/  │   ├── rag/  │   └── models/   `
+`   derma-ai-project/  │  ├── frontend/  │   ├── components/  │   │   ├── Upload.js  │   │   └── Result.js  │  ├── backend/  │   ├── server.js  │  ├── ml-service/  │   ├── api/  │   │   └── main.py  │   ├── preprocessing/  │   ├── inference/  │   ├── training/  │   ├── rag/  │   └── models/   `
 
 ⚡ Setup Instructions
 --------------------
 
 ### 1\. Clone repo
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   git clone https://github.com/your-username/derma-ai.git  cd derma-ai   `
+`   git clone https://github.com/your-username/derma-ai.git  cd derma-ai   `
 
 ### 2\. Start ML Service
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   cd ml-service  python -m venv venv  source venv/bin/activate  pip install -r requirements.txt  uvicorn api.main:app --reload --port 8001   `
+`   cd ml-service  python -m venv venv  source venv/bin/activate  pip install -r requirements.txt  uvicorn api.main:app --reload --port 8001   `
 
 ### 3\. Start Backend
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   cd backend  npm install  node server.js   `
+`   cd backend  npm install  node server.js   `
 
 ### 4\. Start Frontend
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   cd frontend  npm install  npm run dev   `
+`   cd frontend  npm install  npm run dev   `
 
 🌐 API Endpoints
 ----------------
 
 ### Predict
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   POST /predict   `
+`   POST /predict   `
 
 Form-data:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   file: image   `
+`   file: image   `
 
 ### Ask (RAG Q&A)
-
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   POST /ask   `
+`   POST /ask   `
 
 Body:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   {    "prediction": "acne",    "question": "Is this dangerous?"  }   `
+`   {    "prediction": "acne",    "question": "Is this dangerous?"  }   `
 
 🚀 Features
 -----------

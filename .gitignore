@@ -1,0 +1,16 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# ML / large
+*.pt
+*.pth
+
+# Mac
+.DS_Store
+
+# Node
+node_modules/ml-service/venv/
+__pycache__/
+*.pyc
